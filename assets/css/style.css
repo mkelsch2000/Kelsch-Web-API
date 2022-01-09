@@ -1,0 +1,77 @@
+/* List of things that need specific styling */
+/* Header to have high score in one corner, and timer in the other. */
+/* Main body to have the question in bold on top, follow by the buttons stacked on top of each other. */
+/* Buttons need to have specific styling to make them rounded and colorful. */
+
+* {
+  margin: 5px;
+}
+
+.header-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.head-chars {
+  font-size: 30px;
+}
+
+.main-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 5% 25%;
+}
+
+.question-box {
+  display: flex;
+}
+
+.question {
+  font-size: 25px;
+}
+
+.btn-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.btn {
+  padding: 10px;
+  background: linear-gradient(45DEG, #2F1C53, #A46DFF, #F6D1FD); 
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+.btn:hover {
+  background: linear-gradient(135DEG, #074C00, #42A341, #B8E2A3);
+}
+
+@media screen and (max-width: 500px) {
+
+  main {
+    margin: 10% 15%;
+  }
+  .head-chars {
+    font-size: 25px;
+  }
+
+  .question {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  main {
+    margin: 10%;
+  }
+
+  .head-chars {
+    font-size: 22px;
+  }
+
+  .question {
+    font-size: 19px;
+  }
+}
