@@ -3,30 +3,7 @@ var timerEl = document.querySelector("#timer");
 var mainEl = document.querySelector("#main-section");
 var startBtn = document.querySelector("#start-btn")
 
-var startBtnHandler = function() {
 
-  timeHandler();
-
-}
-
-var timeHandler = function() {
-  var timeLeft = 50;
-
-  var timeInterval = setInterval(function () {
-    if (timeLeft > 0) {
-      timerEl.textContent = 'Timer: ' + timeLeft;
-      timeLeft--;
-    }
-    else {
-      timerEl.textContent = 'Timer: 0';
-      clearInterval(timeInterval);
-    }
-  }, 1000);
-}
-
-var scoreHandler = function() {
-
-}
 
 const questions = [
   {
